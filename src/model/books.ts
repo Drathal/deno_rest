@@ -22,13 +22,9 @@ export let state = {
     author: "Andreas A. Antonopoulos",
     title: "Mastering Bitcoin",
   }],
-};
+} as IState;
 
 export const searchBookByIsbn = (isbn: string): (IBook | undefined) =>
   state.books.filter((book) => book.isbn === isbn)[0];
-
-export const getBooks = ({ response }: { response: any }) => {
-  response.body = state.books;
-};
 
 export default state;
