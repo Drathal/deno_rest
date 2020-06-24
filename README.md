@@ -2,7 +2,15 @@
 deno rest api
 
 
-## development
+## make commands
+
+### start dev-server 
+
+``` make dev ```
+
+### cache for development (vscode) 
+
+``` make cache-dev ```
 
 ### start server 
 
