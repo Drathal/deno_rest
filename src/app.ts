@@ -8,7 +8,6 @@ const HOST = env.HOST || "127.0.0.1";
 const PORT = env.PORT || 7700;
 
 const app = new Application();
-
 app.use(router.routes());
 app.use(router.allowedMethods());
 

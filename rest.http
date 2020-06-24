@@ -1,22 +1,22 @@
 @host = http://localhost:7700
 
-GET {{host}}/books HTTP/1.1
+GET {{host}}/api/v1/books HTTP/1.1
 content-type: application/json
 
 ###
 
-GET {{host}}/books/1 HTTP/1.1
+GET {{host}}/api/v1/books/1 HTTP/1.1
 content-type: application/json
 
 ###
 
-POST {{host}}/books/1 HTTP/1.1
+POST {{host}}/api/v1/books HTTP/1.1
 content-type: application/json
 
 {
   "isbn": "5",
-  "author": "Robin Wieruch",
-  "title": "The Road to React"
+  "author": "Markus Dethlefsen",
+  "title": "deno first steps"
 }
 
 
